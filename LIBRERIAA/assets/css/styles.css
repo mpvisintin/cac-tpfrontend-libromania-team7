@@ -1,0 +1,70 @@
+* {
+    margin:0;   
+    padding:0;
+    box-sizing: border-box;
+}
+
+#banner {
+    height: 20vh;
+    background-image: url("../img/biblio.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Shadows Into Light", cursive;
+    color: white;
+    font-size: 2em;
+    line-height: 20vh; /* Ajusta la altura de línea igual a la altura del banner */
+    text-align: center;     
+    overflow: auto;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #333; /* Color de fondo del header */
+    color: white; /* Color del texto del header */
+    padding: 10px; /* Añade un poco de espacio alrededor del contenido del header */
+    z-index: 1000; 
+
+}
+/*Agregamos un z index para que la barra quede fija al principio de la pagina*/
+
+nav {
+    height: 08vh;  /*queremos tener el 20% de alto del navegador*/
+    background-color: #400701 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    
+
+}
+
+#nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#lanzamientos {
+    height: 100;
+}
+
+
+.libro-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.libro-item-img {
+    width:200px;
+}

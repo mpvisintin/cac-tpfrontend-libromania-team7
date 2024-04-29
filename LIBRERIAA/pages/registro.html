@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <h1>Libromania</h1>
+    </header>
+    <main>
+        <h3>Registrate</h3>
+        <form action="registro.html" method="post">
+            <div>
+                <label for="nombreUsuario">Nombre</label>
+                <input type="text" id="nombreUsuario" name="nombreUsuarioIngresado">
+            </div>
+            <div>
+                <label for="apellidoUsuario">Apellido</label>
+                <input type="text" id="apellidoUsuario" name="apellidoUsuarioIngresado">
+            </div>
+            <div>
+                <label for="emailUsuario">Correo electronico</label>
+                <input type="email" id="emailUsuario" name="emailUsuarioIngresado">
+            </div>
+            <div>
+                <label for="contraseñaUsuario">Contraseña</label>
+                <input type="password" id="contraseñaUsuario" name="contraseñaUsuarioIngresado" minlength="6" maxlength="12">
+            </div>
+            <div>
+                <label for="tipoDeDocDelUsuario">Tipo de Documento</label>
+                <select id="tipoDeDocDelUsuario" name="DocUsuarioIngresado">
+                    <option value=""selected>--Seleccione un tipo de Documento ---</option>
+                    <option value="DNI">DNI</option>
+                    <option value="PAS">Pasaporte</option>
+                    <option value="CUIT">CUIT</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="terminos" name="terminosCondiciones" value="1">
+                <label for="terminos">Acepto términos y condiciones</label>
+            </div>
+
+            <input type="submit" value="REGISTRARSE">
+        </form>
+    </main>
+</body>
+</html>
