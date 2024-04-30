@@ -1,0 +1,98 @@
+/*Configuracion para barra de navegacion superior*/
+
+.nav-bar
+{
+    position: fixed; /*El sticky no esta funcionando*/
+    z-index: 100000; /*Se garantiza que este siempre arriba*/
+    top: 0;
+
+    background-color: #333; /*Color de fondo*/
+
+    width: 100%; /*Ocupar todo el ancho*/
+    height: 50px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between; /*Con esto particionamos en dos la barra*/
+    align-items: center;
+}
+
+.nav-bar div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 20px;
+}
+
+.nav-bar div i /*Separacion entre elementos*/
+{
+    margin-right: 20px;
+}
+
+.nav-bar ul /*Edicion de los enlaces*/
+{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px; /*Fuerza el alineamiento de los elementos - prueba y error, y funciono*/
+}
+
+.nav-bar ul li
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar ul li a /*Edicion general de los elementos anclas*/
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------------------------------------------------------------------*/
+/*A partir de aca se hace todo lo relacionado a botones en barra de navegacion*/
+/*----------------------------------------------------------------------------*/
+
+.nav-bar-btn /*Botones - En ancla barra de navegacion*/
+{
+    margin-left: 20px; /*Separacion entre contenidos*/
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.75em; /*Ni idea aqui le damos un tamañito*/
+    
+    color: white; /* Color de texto */
+    
+    border-left: 2px inset white; /*Bordes de la caja*/
+    border-right: 2px inset white;
+    border-radius: 5px;
+   
+    overflow: hidden; /*Oculta todo lo que quede por fuera -  Sirve para la animacion*/
+    margin: 2px 2px 2px 6px; 
+    padding: 5px 10px;
+    position: relative; /*Ajusta el posicionado - para que se "mueva" junto a las animaciones*/
+}
+
+.nav-bar-btn::before 
+{
+    content: ""; 
+    position: absolute; /*Queda alineado con la caja del texto*/
+    width: 100%; /*Asigna mis dimensiones del boton*/
+    height: 100%;
+   
+    background: linear-gradient(#e66465, #9198e5); /*Color del fondo*/
+    left: 0;  /*posicion del fondo editado*/
+    top: -100%; /*Se va arriba de todo*/
+    border-radius: 75%;
+    transition: top 0.3s, border-radius 0.3s;  /*Transicion */
+    opacity: 0; /*Con esto se oculta*/
+    z-index: -1; /*Queda atras del contenido*/
+}
+
+.nav-bar-btn:hover::before {
+    top: 0;
+    border-radius: 0%;
+    opacity: 100%;
+}

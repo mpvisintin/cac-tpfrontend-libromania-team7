@@ -1,0 +1,20 @@
+.banner { /*Edicion del fondo*/
+    margin-top: 50px; /*Con esto garantizamos que el banner este abajo de la barra de navegacion*/
+    
+    height: 20vh;
+    background-image: url("../img/biblio.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner
+{
+    font-family: "Shadows Into Light", cursive;
+    color: white;
+    font-size: 2em;
+    line-height: 20vh; /* Ajusta la altura de línea igual a la altura del banner */
+
+    display: flex; /*Cambio todo a flex para dejar todo centrado*/
+    justify-content: center;
+    align-items: center;
+}

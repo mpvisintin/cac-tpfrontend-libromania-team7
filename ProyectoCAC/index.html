@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libromania</title>
+    <link rel="icon" href="assets/img/librooo.ico">
+
+    <script src="https://kit.fontawesome.com/3edbfb76e6.js" crossorigin="anonymous"></script>
+
+    <!--  Hoja de estilos original
+        <link rel="stylesheet" href="./assets/css/styles.css"> 
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15+Charted&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylessheet" href="./assets/css/universal.css"> <!-- Configuracion universal -->
+    <link rel="stylesheet" href="./assets/css/barra-navegacion.css"> <!-- Barra de navegacion -->
+    <link rel="stylesheet" href="./assets/css/banner.css"> <!-- Barra de navegacion -->
+
+
+    <!--Bootstrap CSS + JavaScript para carrusel de imagenes-->
+    <link rel="stylesheet" href="./carousel/carousel-libreria-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./carousel/carousel-ajuste.css"> <!--Hoja de estilos complemento-->
+    <script src="./carousel/carousel-libreria-bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegacion -->
+        <nav class="nav-bar">
+            <div>
+                <i class="fa-solid fa-book-open fa-bounce"></i>
+                <span>Libromania</span>
+            </div>
+            <ul>
+                <li><a class="nav-bar-btn" href="#favoritos">Favoritos</a></li> <!--me redirige dentro de la misma pag a otro lado-->
+                <li><a class="nav-bar-btn" href="pages/registro.html">Registrarse</a></li>
+                <!-- me regidire a una nueva pagina-->
+                <li><a class="nav-bar-btn" href="">Iniciar Sesión</a></li>
+                <li><a class="nav-bar-btn" href="#">ARS$</a></li>
+            </ul>
+        </nav>
+        <!-- Banner web -->
+        <section class="banner">
+            <h2>"No se puede abrir un libro sin aprender algo" </h2>
+        </section>
+    </header>
+
+    <!-- Cuerpo web -->
+    <main> <!-- ESTE MAIN LO PODEMOS GRIDEAR -->
+
+        <section style="background-color: antiquewhite;">
+            <h2>Lanzamientos</h2> <!--LO AGREGUE PARA SEPARAR-->
+            
+            <section id="carousel-seccion"> <!-- Carousel empleado : "Individual .carousel-item interval"-->
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img class="carousel-img" src="./carousel/carousel-imagenes/PerritoBoca1.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img class="carousel-img" src="./carousel/carousel-imagenes/PerritoBoca2.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img class="carousel-img" src="./carousel/carousel-imagenes/PerritoBoca3.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                </div>
+            </section>
+            <!--Clase "data-bs-interval="valor" " controla el tiempo, esta en miliseg (multiplicar tiempo deseado x1000)-->
+            <!--Control de contenedor de imagenes "d-block" y "w-100" // Buscar en documentacion para ajuste en maquetacion final-->
+            <!--/*FIN*/    Carrousel Imagenes-->
+        </section>
+
+        <!--finalllll-->
+        <section id="favoritos">
+            <h3>Tus favoritos</h3>
+        </section>
+    </main>
+    <footer>
+        <a href="pages/guia de compra.html">Guia de compra</a>
+        <a href="">Contacto</a>
+        <a href="">Preguntas frecuentes</a>
+    </footer>
+</body>
+
+</html>
