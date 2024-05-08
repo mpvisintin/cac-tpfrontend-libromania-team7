@@ -1,0 +1,134 @@
+/*Configuracion de tarjetas expositoras*/
+
+/*----------------------------------*/
+/*Configuracion general*/
+/*----------------------------------*/
+
+/*Tiene estilo aplica en section id="muestra-catalogo"*/
+
+:root
+{
+    /*Control de tarjetas*/
+    --ancho-base:300px; /*Ancho del contenedor*/
+    --alto-base:200px; /*Corresponde a la altura del cuerpo de carta (no afecta al conjunto en si) */
+    --alto-limite: 300px; /*Afecta a la animacion*/
+
+    /*Control tamaño de fuente*/
+    --font-titulo: 24px;
+    --font-cuerpo: 18px;
+    --font-pie: 16px;
+}
+
+.card-container 
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    margin: 10px; /*Despues eliminar y reajustar*/
+    padding: 0;
+
+    overflow: hidden;
+    transition: height 3s ease-in-out;    
+    
+    background: none; /*Fundamental para no solapar el fondo*/
+}
+
+/*----------------------------------*/
+/*Configuracion del titulo*/
+/*----------------------------------*/
+
+.card-title
+{
+    background-color: #1b1917; 
+    padding: 5px;
+
+    border-bottom: solid #363432;
+    border-radius: 10px 10px 0 10px;   
+}
+
+.card-title p
+{
+    text-align: center;
+    color: white; /*Color de texto*/
+    font-size: var(--font-titulo);
+}
+
+/*----------------------------------*/
+/*Configuracion del cuerpo*/
+/*----------------------------------*/
+
+.card-body {
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items:center; 
+    margin: 0; 
+    padding: 0;
+    height: var(--alto-base);
+    transition: height 3s ease-in-out;
+}
+
+.card-body:hover /*Agregamos una transicion*/
+{
+    height: var(--alto-limite);
+}
+
+.card-body img /*Configuracion de imagen*/
+{
+    width: 95%;
+    height: 95%;
+    margin: 2px; /*Solo para que no quede "compactada" la imagen*/
+    border-radius: 10px;
+    filter: brightness(80%); 
+    z-index: 1; /*Vamos a tapar el texto del parrafo*/
+    transition: opacity 3s ease-in-out;
+}
+
+.card-body img:hover /*Agregamos una transicion*/
+{
+    opacity: 0.9;   /*Mandamos atras del texto y agregamos transparencia*/
+    background-color: antiquewhite;
+    z-index: 0;
+}
+
+.card-body p /*Lo relacionado a la descripcion del libro*/
+{ /*A reparar el texto si me acerco con el mouse aparece-desaparece de forma continua*/
+    font-weight: 700;
+    font-size: var(--font-cuerpo);
+
+    text-align: center;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 5px; 
+    width: 100%; 
+    padding: 15px 10px 10px 10px; /* Agregado relleno */
+}
+
+/*----------------------------------*/
+/*Configuracion del pie*/
+/*----------------------------------*/
+
+.card-foot /*Configuracion del contenedor*/
+{
+    background-color: #1b1917; /*Color de fondo*/
+    position: relative;
+    padding: 2px;
+    margin: 0px;
+
+    border-bottom: solid #1b1917;
+    border-radius: 10px;
+    bottom: 0px;
+}
+
+.card-foot p
+{
+    text-align: center;
+    color: white; /*Color de texto*/
+    font-size: var(--font-pie);
+    margin: 2px;
+}

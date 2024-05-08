@@ -1,0 +1,31 @@
+/*Edicion del banner*/
+
+.banner { /*Imagen banner*/
+    height: 20vh;
+    background-image: url("../img/biblio.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner 
+{
+    background-color: rgba(0,0,0,1);
+    opacity: 0.9;
+}
+
+.banner h1 /*Titulo del banner*/
+{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 700;
+    color: rgb(255, 250, 250);
+    font-size: 2em;
+    line-height: 20vh; /* Ajusta la altura de línea igual a la altura del banner */
+
+    display: flex; /*Cambio todo a flex para dejar todo centrado*/
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    margin: 0px;
+}

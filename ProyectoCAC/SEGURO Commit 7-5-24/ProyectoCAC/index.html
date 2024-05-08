@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libromania</title>
+
+    <!--Favicon + GoogleFonts-->
+    <link rel="icon" href="assets/img/librooo.ico">
+    <script src="https://kit.fontawesome.com/3edbfb76e6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15+Charted&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <!--CSS/Scripts comun a las paginas-->
+    <link rel="stylesheet" href="./assets/css/universal.css"> <!-- Configuracion universal -->
+    <link rel="stylesheet" href="./assets/css/barra-navegacion.css"> <!-- Barra de navegacion -->
+    <link rel="stylesheet" href="./assets/css/banner.css"> <!-- Barra de navegacion -->
+    <link rel="stylesheet" href="./assets/css/background.css"> <!-- Fondo del body -->
+
+    <!--Carousel Bootstrap-->
+    <link rel="stylesheet" href="./assets/carousel/carousel-libreria-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/carousel/carousel-ajuste.css"> <!--Hoja de estilos complemento-->
+    <script src="./assets/carousel/carousel-libreria-bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!--CSS/Scripts usados en Index-->
+    <link rel="stylesheet" href="./assets/css/card-libros-index.css"> <!-- Estilo tarjeta -->
+    <!--CSS con estilos footer a revisar-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body class="back-design">
+    <!-- Barra de navegacion -->
+    <nav class="nav-bar">
+        <div>
+            <i class="fa-solid fa-book-open fa-bounce"></i>
+            <span>Libromania</span>
+        </div>
+        <div class="nav-search">
+            <div class="nav-search-input"><input type="text"></div>
+            <button class="nav-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <ul>
+            <li><a class="nav-bar-btn" href="#favoritos">Favoritos</a></li>
+            <!--me redirige dentro de la misma pag a otro lado-->
+            <li><a class="nav-bar-btn" href="pages/registro.html">Solicitar libros</a></li>
+            <!-- me regidire a una nueva pagina-->
+            <li><a class="nav-bar-btn" href="">Iniciar Sesión</a></li>
+            <li><a class="nav-bar-btn" href="#">Donaciones</a></li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <!-- Banner web -->
+        <section class="banner">
+            <h1>"No se puede abrir un libro sin aprender algo" </h1>
+        </section>
+    </header>
+
+    <!-- Cuerpo web -->
+    <main> <!-- ESTE MAIN LO PODEMOS GRIDEAR -->
+        <section id="Quienes somos">
+            <h2>Quienes somos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis, nostrum reiciendis dolorum illum quae qui ullam pariatur quaerat voluptatibus velit
+                necessitatibus! Voluptatem voluptate sapiente vel nihil. Labore laborum expedita id?
+            </p>
+        </section>
+
+        <section id="carousel-muestras" style="display:flex; flex-direction: column;">
+            <h2>Lanzamientos</h2> <!--LO AGREGUE PARA SEPARAR-->
+
+            <div id="carousel-bootstrap">
+                <div class="carousel-imag-container">
+                    <div id="carousel-seccion"> <!-- Carousel empleado : "Individual .carousel-item interval"-->
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-1.png"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-2.png"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-imag-container">
+                                    <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-3.png"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <!--Botones-->
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--Clase "data-bs-interval="valor" " controla el tiempo, esta en miliseg (multiplicar tiempo deseado x1000)-->
+                    <!--Control de contenedor de imagenes "d-block" y "w-100" // Buscar en documentacion para ajuste en maquetacion final-->
+                    <!--/*FIN*/    Carrousel Imagenes-->
+                </div>
+            </div>
+
+        </section>
+
+        <section id="muestra-catalogo" style="display:flex; flex-direction: column;">
+            <!--Presentacion catalogo-->
+            <div id="muestra-catalogo-arg">
+                <h2>Nuestro catalogo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, nostrum reiciendis dolorum illum quae qui ullam pariatur quaerat voluptatibus velit
+                    necessitatibus! Voluptatem voluptate sapiente vel nihil. Labore laborum expedita id?
+                </p>
+            </div>
+
+            <!--Tarjetas de catalogo--> <!--La onda es armar un js que los coloque todo - en proceso -->
+            <div id="catalogo" style="display:flex; flex-direction: row;">
+                <div>
+                    <div class="card-container">
+                        <div class="card-title">
+                            <p>
+                                Titulo del libro
+                            </p>
+                        </div>
+
+                        <div class="card-body">
+                            <img src="./assets/img/catalogo/lib-cat-1.png" alt="Descripción de la imagen">
+                            <p class="card-text"> <!-- Descripción -->
+                                Descripcion breve del libro
+                            </p>
+                        </div>
+
+                        <div class="card-foot"> <!-- Pie de tarjeta -->
+                            <p>
+                                Autor - Fecha - Dato adicional lore
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card-container">
+                        <div class="card-title">
+                            <p>
+                                Titulo del libro
+                            </p>
+                        </div>
+
+                        <div class="card-body">
+                            <img src="./assets/img/catalogo/lib-cat-2.png" alt="Descripción de la imagen">
+                            <p class="card-text"> <!-- Descripción -->
+                                Descripcion breve del libro
+                            </p>
+                        </div>
+
+                        <div class="card-foot"> <!-- Pie de tarjeta -->
+                            <p>
+                                Autor - Fecha - Dato adicional lore
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card-container">
+                        <div class="card-title">
+                            <p>
+                                Titulo del libro
+                            </p>
+                        </div>
+
+                        <div class="card-body">
+                            <img src="./assets/img/catalogo/lib-cat-3.png" alt="Descripción de la imagen">
+                            <p class="card-text"> <!-- Descripción -->
+                                Descripcion breve del libro
+                            </p>
+                        </div>
+                        <div class="card-foot"> <!-- Pie de tarjeta -->
+                            <p>
+                                Autor - Fecha - Dato adicional lore
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card-container">
+                        <div class="card-title">
+                            <p>
+                                Titulo del libro
+                            </p>
+                        </div>
+
+                        <div class="card-body">
+                            <img src="./assets/img/catalogo/lib-cat-4.png" alt="Descripción de la imagen">
+                            <p class="card-text"> <!-- Descripción -->
+                                Descripcion breve del libro
+                            </p>
+                        </div>
+
+                        <div class="card-foot"> <!-- Pie de tarjeta -->
+                            <p>
+                                Autor - Fecha - Dato adicional lore
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card-container">
+                        <div class="card-title">
+                            <p>
+                                Titulo del libro
+                            </p>
+                        </div>
+
+                        <div class="card-body">
+                            <img src="./assets/img/catalogo/lib-cat-5.png" alt="Descripción de la imagen">
+                            <p class="card-text"> <!-- Descripción -->
+                                Descripcion breve del libro
+                            </p>
+                        </div>
+
+                        <div class="card-foot"> <!-- Pie de tarjeta -->
+                            <p>
+                                Autor - Fecha - Dato adicional lore
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card-container">
+                        <div class="card-title">
+                            <p>
+                                Titulo del libro
+                            </p>
+                        </div>
+
+                        <div class="card-body">
+                            <img src="./assets/img/catalogo/lib-cat-6.png" alt="Descripción de la imagen">
+                            <p class="card-text"> <!-- Descripción -->
+                                Descripcion breve del libro
+                            </p>
+                        </div>
+
+
+                        <div class="card-foot"> <!-- Pie de tarjeta -->
+                            <p>
+                                Autor - Fecha - Dato adicional lore
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--finalllll-->
+        <section id="favoritos">
+            <h3>Tus favoritos</h3>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="pages/guia de compra.html">Guia de compra</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
