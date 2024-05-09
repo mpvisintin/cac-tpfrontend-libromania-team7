@@ -1,29 +1,16 @@
-/*Edicion complementaria del carousel*/
-
-#carousel-seccion
+.carousel-container /*Contenedor agregado*/
 {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-evenly;
-
-    margin:0px;
-    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    height: 350px;
+    overflow: hidden;
 }
 
-.carousel-img
-{       
-    background-color: black;
-
-    object-position: center;
-
-    width: 400px; /*Tamaño del contenedor*/
-    height: 400px;
-    margin: 20px 0px; /*Agrego un gap con el banner*/ 
+.carousel-img /*Clase agregada*/
+{
+    width: 400px; /*Todas las imagenes tienen el mismo tamaño*/
+    height: 300px; 
+    object-fit: contain;
 }
-
-/*-----------------------------------------------------------------
-No tocar mas la edicion de imagenes del carousel.
-Empieza a entrar en conflicto con .css y .js de bootstrap.
-No retocar el flex por lo anterior.
-Investigar como hacerlo "responsive", ya que el carousel es gigante.
------------------------------------------------------------------*/

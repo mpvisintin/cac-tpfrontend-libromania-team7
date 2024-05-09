@@ -1,43 +1,38 @@
-/* Configuracion grilla */
+/* Configuracion grilla main */
 .grid-index-container-main {
     display: grid;
-    grid-template-columns: 1fr repeat(4, 1fr);
-    grid-template-rows: 1fr repeat(4, 1fr);
+    grid-template-columns: 1fr repeat(3, 1fr); /*4 columnas */
+    grid-template-rows: 0.2fr repeat(3, 1fr); /*4 filas*/
     gap: 2px;
 }
 
-/*Asignacion de areas de los ID*/
+/* Asignacion de areas de los ID */
 
-#quienes-somos 
-{
+#quienes-somos {
     background-color: red;
     grid-area: quienes-somos;
 }
 
-#carousel-muestras 
-{
-    background-color: brown;
-    grid-area: carousel-muestras; 
+#carousel {
+    background-color: green;
+    grid-area: carousel; 
 }
 
-#muestra-catalogo 
-{
+#catalogo {
     background-color: yellow;
-    grid-area: muestra-catalogo; 
+    grid-area: catalogo; 
+    justify-content: center;
 }
 
-#favoritos
-{
-    background-color: white;
+#favoritos {
+    background-color: blue;
     grid-area: favoritos;
 }
 
-/*Distribucion de areas*/
-
-.grid-index-container-main 
-{
+/* Distribucion de areas */
+.grid-index-container-main {
     grid-template-areas:
-        "quienes-somos carousel-muestras carousel-muestras carousel-muestras"
-        "muestra-catalogo muestra-catalogo muestra-catalogo muestra-catalogo";
-        "favoritos favoritos favoritos favoritos"    
+        "quienes-somos carousel carousel carousel"
+        "catalogo catalogo catalogo catalogo"
+        "favoritos favoritos favoritos favoritos"; 
 }

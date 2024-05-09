@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./assets/css/card-libros-index.css"> <!-- Estilo tarjeta -->
     <!--CSS con estilos footer a revisar-->
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- <link rel="stylesheet" href="./assets/css/index-main-grid.css"> -->
+    <link rel="stylesheet" href="./assets/css/index-main-grid.css">
 </head>
 
 <body class="back-design">
@@ -62,7 +62,7 @@
     </header>
 
     <!-- Cuerpo web -->
-    <main class="grid-index-container-main"> <!-- ESTE MAIN LO PODEMOS GRIDEAR -->
+    <main class="grid-index-container-main">
         <section id="quienes-somos">
             <h2>Quienes somos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -71,51 +71,43 @@
             </p>
         </section>
 
-        <section id="carousel-muestras" style="display:flex; flex-direction: column;">
-            <h2>Lanzamientos</h2> <!--LO AGREGUE PARA SEPARAR-->
-
-            <div id="carousel-bootstrap">
-                <div class="carousel-imag-container">
-                    <div id="carousel-seccion"> <!-- Carousel empleado : "Individual .carousel-item interval"-->
-                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="5000">
-                                    <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-1.png"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="5000">
-                                    <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-2.png"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-imag-container">
-                                    <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-3.png"
-                                        alt="...">
-                                </div>
-                            </div>
-                            <!--Botones-->
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+        <section id="carousel">
+            <div class="carousel-container">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-1.png"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-2.png"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-3.png"
+                                alt="...">
                         </div>
                     </div>
-                    <!--Clase "data-bs-interval="valor" " controla el tiempo, esta en miliseg (multiplicar tiempo deseado x1000)-->
-                    <!--Control de contenedor de imagenes "d-block" y "w-100" // Buscar en documentacion para ajuste en maquetacion final-->
-                    <!--/*FIN*/    Carrousel Imagenes-->
+                    <!--Botones-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+                <!--Clase "data-bs-interval="valor" " controla el tiempo, esta en miliseg (multiplicar tiempo deseado x1000)-->
+                <!--Control de contenedor de imagenes "d-block" y "w-100" // Buscar en documentacion para ajuste en maquetacion final-->
             </div>
-
         </section>
 
-        <section id="muestra-catalogo" style="display:flex; flex-direction: column;">
+        <section id="catalogo" style="display:flex; flex-direction: row; flex-wrap: wrap ;">
             <!--Presentacion catalogo-->
-            <div id="muestra-catalogo-arg">
+            <div id="catalog-text">
                 <h2>Nuestro catalogo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Officiis, nostrum reiciendis dolorum illum quae qui ullam pariatur quaerat voluptatibus velit
@@ -124,7 +116,7 @@
             </div>
 
             <!--Tarjetas de catalogo--> <!--La onda es armar un js que los coloque todo - en proceso -->
-            <div id="catalogo" style="display:flex; flex-direction: row;">
+            <div id="catalogo" style="display:flex; flex-direction: row; flex-wrap: wrap;">
                 <div>
                     <div class="card-container">
                         <div class="card-title">
