@@ -1,27 +1,41 @@
 /* Configuracion grilla main */
 .grid-index-container-main {
+    margin: 5px;
     display: grid;
-    grid-template-columns: 1fr repeat(3, 1fr); /*4 columnas */
-    grid-template-rows: 0.2fr repeat(3, 1fr); /*4 filas*/
+    grid-template-columns: 0.3fr repeat(3,0.3fr); /*4 columnas */
+    grid-template-rows: 0.2fr 0.5fr 0.3fr 0.3fr 1fr; /*5 filas*/
     gap: 2px;
 }
 
 /* Asignacion de areas de los ID */
 
-#quienes-somos {
+#quienes-somos 
+{
     background-color: red;
     grid-area: quienes-somos;
 }
 
-#carousel {
+#carousel 
+{
     background-color: green;
     grid-area: carousel; 
 }
 
-#catalogo {
+#catalogo1
+{
+    background-color: gray;
+    grid-area: catalogo1; 
+}
+
+#catalogo2 
+{
     background-color: yellow;
-    grid-area: catalogo; 
-    justify-content: center;
+    grid-area: catalogo2; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-content: center;
+
 }
 
 #favoritos {
@@ -32,7 +46,37 @@
 /* Distribucion de areas */
 .grid-index-container-main {
     grid-template-areas:
-        "quienes-somos carousel carousel carousel"
-        "catalogo catalogo catalogo catalogo"
+        "quienes-somos quienes-somos quienes-somos quienes-somos" 
+        "carousel carousel carousel carousel"
+        "catalogo1 catalogo2 catalogo2 catalogo2"
+        "catalogo1 catalogo2 catalogo2 catalogo2"
         "favoritos favoritos favoritos favoritos"; 
+}
+
+/*Tamaño movil 360x800*/
+
+@media screen and (max-width: 360px) 
+{
+    .grid-index-container-main 
+    {
+        grid-template-columns: 1fr; /*Todo en columnado*/
+        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.5fr;
+    }
+
+    #quienes-somos, /*Areas automaticas*/
+    #carousel,
+    #catalogo,
+    #favoritos 
+    {
+        grid-area: auto;
+    }
+
+    .grid-index-container-main {
+        grid-template-areas:
+            "quienes-somos"
+            "carousel"
+            "catalogo1"
+            "catalogo2"
+            "favoritos";
+    }
 }

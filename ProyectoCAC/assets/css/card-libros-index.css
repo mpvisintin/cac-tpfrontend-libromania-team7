@@ -9,12 +9,12 @@
 :root
 {
     /*Control de tarjetas*/
-    --ancho-base:300px; /*Ancho del contenedor*/
-    --alto-base:200px; /*Corresponde a la altura del cuerpo de carta (no afecta al conjunto en si) */
-    --alto-limite: 300px; /*Afecta a la animacion*/
+    --ancho-base:100ox; /*Ancho del contenedor*/
+    --alto-base:150px; /*Corresponde a la altura del cuerpo de carta (no afecta al conjunto en si) */
+    --alto-limite: 200px; /*Afecta a la animacion*/
 
     /*Control tamaño de fuente*/
-    --font-titulo: 24px;
+    --font-titulo: 16px;
     --font-cuerpo: 18px;
     --font-pie: 16px;
 }
@@ -45,8 +45,7 @@
 .card-title
 {
     background-color: #1b1917; 
-    padding: 5px;
-
+    padding: 2px;
     border-bottom: solid #363432;
     border-radius: 10px 10px 0 10px;   
 }
@@ -54,6 +53,8 @@
 .card-title p
 {
     text-align: center;
+    justify-content: center;
+    align-items: center;
     color: white; /*Color de texto*/
     font-size: var(--font-titulo);
 }

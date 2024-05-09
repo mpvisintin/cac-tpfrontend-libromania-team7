@@ -12,5 +12,22 @@
 {
     width: 400px; /*Todas las imagenes tienen el mismo tamaño*/
     height: 300px; 
+    width: 100%%;
     object-fit: contain;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Tamaño movil 360x800*/
+
+@media screen and (max-width: 360px) 
+{
+    .carousel-container /*Contenedor agregado*/
+    {
+        height: 200px;
+    }
+    .carousel-img /*Clase agregada*/
+    {
+        flex-wrap: nowrap;
+    }
 }
