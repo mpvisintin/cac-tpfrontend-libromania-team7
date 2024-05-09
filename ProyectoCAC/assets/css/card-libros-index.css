@@ -9,7 +9,7 @@
 :root
 {
     /*Control de tarjetas*/
-    --ancho-base:100ox; /*Ancho del contenedor*/
+    --ancho-base:200px; /*Ancho del contenedor*/
     --alto-base:150px; /*Corresponde a la altura del cuerpo de carta (no afecta al conjunto en si) */
     --alto-limite: 200px; /*Afecta a la animacion*/
 
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
 
-    width: 300px;
+    width: var(--ancho-base);
 
     border: 1px solid black;
     border-radius: 10px;

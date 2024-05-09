@@ -2,9 +2,10 @@
 .grid-index-container-main {
     margin: 5px;
     display: grid;
-    grid-template-columns: 0.3fr repeat(3,0.3fr); /*4 columnas */
-    grid-template-rows: 0.2fr 0.5fr 0.3fr 0.3fr 1fr; /*5 filas*/
+    grid-template-columns:0.1 0.4 0.4 .4; /*4 columnas */ /*Se intento buscar proporcionalidad*/
+    grid-template-rows: 0.2fr 0.1fr 0.3fr 0.3fr 1fr; /*5 filas*/
     gap: 2px;
+    object-fit: contain;
 }
 
 /* Asignacion de areas de los ID */
@@ -31,10 +32,14 @@
 {
     background-color: yellow;
     grid-area: catalogo2; 
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-content: center;
+    flex-direction: row;
+    align-items: start;
+    align-content: start;
+    justify-content: space-evenly;
+    margin:0px;
+    object-fit: contain;
 
 }
 
