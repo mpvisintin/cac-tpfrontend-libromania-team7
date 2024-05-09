@@ -7,7 +7,6 @@
 
 .back-design
 {
-    background-image: url(../img/patron.png);
     background-size: 200px 200px;
     background-repeat: repeat;
     filter: brightness(0.9);
