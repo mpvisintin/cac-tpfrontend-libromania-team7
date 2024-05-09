@@ -2,7 +2,7 @@
 
 .nav-bar
 {
-    position: fixed; /*El sticky no esta funcionando*/
+    position: sticky; /*El sticky no esta funcionando*/
     z-index: 100000; /*Se garantiza que este siempre arriba*/
     top: 0;
 
@@ -43,6 +43,7 @@
     list-style-type: none;
     display: flex;
     align-items: center;
+    padding: 0px; /*Condicion necesaria - Molesta en responsive*/
 }
 
 .nav-bar ul li a /*Edicion general de los elementos anclas*/
@@ -81,7 +82,6 @@
     position: absolute; /*Queda alineado con la caja del texto*/
     width: 100%; /*Asigna mis dimensiones del boton*/
     height: 100%;
-   
     background: linear-gradient(#e66465, #9198e5); /*Color del fondo*/
     left: 0;  /*posicion del fondo editado*/
     top: -100%; /*Se va arriba de todo*/
