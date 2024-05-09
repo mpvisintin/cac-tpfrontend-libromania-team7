@@ -1,0 +1,43 @@
+/* Configuracion grilla */
+.grid-index-container-main {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 1fr);
+    grid-template-rows: 1fr repeat(4, 1fr);
+    gap: 2px;
+}
+
+/*Asignacion de areas de los ID*/
+
+#quienes-somos 
+{
+    background-color: red;
+    grid-area: quienes-somos;
+}
+
+#carousel-muestras 
+{
+    background-color: brown;
+    grid-area: carousel-muestras; 
+}
+
+#muestra-catalogo 
+{
+    background-color: yellow;
+    grid-area: muestra-catalogo; 
+}
+
+#favoritos
+{
+    background-color: white;
+    grid-area: favoritos;
+}
+
+/*Distribucion de areas*/
+
+.grid-index-container-main 
+{
+    grid-template-areas:
+        "quienes-somos carousel-muestras carousel-muestras carousel-muestras"
+        "muestra-catalogo muestra-catalogo muestra-catalogo muestra-catalogo";
+        "favoritos favoritos favoritos favoritos"    
+}
