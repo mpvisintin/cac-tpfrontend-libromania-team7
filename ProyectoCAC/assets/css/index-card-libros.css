@@ -9,14 +9,21 @@
 :root
 {
     /*Control de tarjetas*/
-    --ancho-base:200px; /*Ancho del contenedor*/
-    --alto-base:150px; /*Corresponde a la altura del cuerpo de carta (no afecta al conjunto en si) */
+    --ancho-base:300px; /*Ancho del contenedor - actua en .card-container*/
+    --alto-base:300px; /*Altura del cuerpo de carta - actua en .card-body*/
     --alto-limite: 200px; /*Afecta a la animacion*/
 
     /*Control tamaño de fuente*/
-    --font-titulo: 16px;
-    --font-cuerpo: 18px;
-    --font-pie: 16px;
+    --titulo-size: 20px;
+    --cuerpo-size: 18px;
+    --pie-size: 16px;
+
+    /*Controles de queris*/
+    /*Dispositivo 1*/
+
+
+    /*Dispositivo 2*/
+
 }
 
 .card-container 
@@ -24,13 +31,12 @@
     display: flex;
     flex-direction: column;
 
+    margin: 5px;
+
     width: var(--ancho-base);
 
     border: 1px solid black;
     border-radius: 10px;
-
-    margin: 10px; /*Despues eliminar y reajustar*/
-    padding: 0;
 
     overflow: hidden;
     transition: height 3s ease-in-out;    
@@ -56,7 +62,7 @@
     justify-content: center;
     align-items: center;
     color: white; /*Color de texto*/
-    font-size: var(--font-titulo);
+    font-size: var(--titulo-size);
 }
 
 /*----------------------------------*/
@@ -72,11 +78,6 @@
     padding: 0;
     height: var(--alto-base);
     transition: height 3s ease-in-out;
-}
-
-.card-body:hover /*Agregamos una transicion*/
-{
-    height: var(--alto-limite);
 }
 
 .card-body img /*Configuracion de imagen*/
@@ -98,9 +99,10 @@
 }
 
 .card-body p /*Lo relacionado a la descripcion del libro*/
-{ /*A reparar el texto si me acerco con el mouse aparece-desaparece de forma continua*/
+{ 
+    /*A reparar el texto si me acerco con el mouse aparece-desaparece de forma continua*/
     font-weight: 700;
-    font-size: var(--font-cuerpo);
+    font-size: var(--cuerpo-size);
 
     text-align: center;
     color: rgb(255, 0, 0);
@@ -130,6 +132,6 @@
 {
     text-align: center;
     color: white; /*Color de texto*/
-    font-size: var(--font-pie);
+    font-size: var(--pie-size);
     margin: 2px;
 }
