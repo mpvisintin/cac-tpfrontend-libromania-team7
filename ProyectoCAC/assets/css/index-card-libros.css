@@ -9,23 +9,13 @@
 :root
 {
     /*Control de tarjetas*/
-    --ancho-base:300px; /*Ancho del contenedor - actua en .card-container*/
-    --alto-base:300px; /*Altura del cuerpo de carta - actua en .card-body*/
-    --alto-limite: 200px; /*Afecta a la animacion*/
-
+    --anchobase1:250px; /*Ancho del contenedor - actua en .card-container*/
+    --altobase1:200px; /*Altura del cuerpo de carta - actua en .card-body*/
     /*Control tamaño de fuente*/
-    --titulo-size: 20px;
-    --cuerpo-size: 18px;
+    --titulo-size: 18px;
+    --cuerpo-size: 16px;
     --pie-size: 16px;
-
-    /*Controles de queris*/
-    /*Dispositivo 1*/
-
-
-    /*Dispositivo 2*/
-
 }
-
 .card-container 
 {
     display: flex;
@@ -33,42 +23,39 @@
 
     margin: 5px;
 
-    width: var(--ancho-base);
+    width: var(--anchobase1);
 
     border: 1px solid black;
     border-radius: 10px;
 
     overflow: hidden;
-    transition: height 3s ease-in-out;    
-    
+   
     background: none; /*Fundamental para no solapar el fondo*/
 }
-
 /*----------------------------------*/
 /*Configuracion del titulo*/
 /*----------------------------------*/
-
 .card-title
 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     background-color: #1b1917; 
     padding: 2px;
     border-bottom: solid #363432;
     border-radius: 10px 10px 0 10px;   
 }
-
 .card-title p
 {
     text-align: center;
-    justify-content: center;
-    align-items: center;
     color: white; /*Color de texto*/
     font-size: var(--titulo-size);
+    margin:0;
 }
-
 /*----------------------------------*/
 /*Configuracion del cuerpo*/
 /*----------------------------------*/
-
 .card-body {
     position: relative; 
     display: flex; 
@@ -76,10 +63,8 @@
     align-items:center; 
     margin: 0; 
     padding: 0;
-    height: var(--alto-base);
-    transition: height 3s ease-in-out;
+    height: var(--altobase1);
 }
-
 .card-body img /*Configuracion de imagen*/
 {
     width: 95%;
@@ -90,32 +75,26 @@
     z-index: 1; /*Vamos a tapar el texto del parrafo*/
     transition: opacity 3s ease-in-out;
 }
-
 .card-body img:hover /*Agregamos una transicion*/
 {
     opacity: 0.9;   /*Mandamos atras del texto y agregamos transparencia*/
     background-color: antiquewhite;
     z-index: 0;
 }
-
-.card-body p /*Lo relacionado a la descripcion del libro*/
+.card-body p /*Lo relacionado a la descripcion del libro*//*A reparar el texto si me acerco con el mouse aparece-desaparece de forma continua*/
 { 
-    /*A reparar el texto si me acerco con el mouse aparece-desaparece de forma continua*/
     font-weight: 700;
     font-size: var(--cuerpo-size);
-
     text-align: center;
     color: rgb(255, 0, 0);
     position: absolute;
-    top: 5px; 
+    top: 2px; 
     width: 100%; 
-    padding: 15px 10px 10px 10px; /* Agregado relleno */
+    padding: 5px 10px 5px 10px; /* Agregado relleno */
 }
-
 /*----------------------------------*/
 /*Configuracion del pie*/
 /*----------------------------------*/
-
 .card-foot /*Configuracion del contenedor*/
 {
     background-color: #1b1917; /*Color de fondo*/
@@ -127,11 +106,62 @@
     border-radius: 10px;
     bottom: 0px;
 }
-
 .card-foot p
 {
     text-align: center;
     color: white; /*Color de texto*/
     font-size: var(--pie-size);
     margin: 2px;
+}
+/*----------------------------------*/
+/*Medias*/
+/*----------------------------------*/
+
+/*360x800 px*/
+@media screen and (max-width: 360px) 
+{
+    :root
+    {
+        /*Control de tarjetas*/
+        --anchobase2:160px; 
+        --altobase2:180px;         
+        /*Control tamaño de fuente*/
+        --titulo-size: 18px;
+        --cuerpo-size: 16px;
+        --pie-size: 16px;
+    } 
+    .card-container 
+    {
+        width: var(--anchobase2);
+        margin: 2px;
+    }
+    .card-title
+    {
+        height: 30px;
+    }
+    .card-title p 
+    {
+        font-size: calc(var(--titulo-size)*0.6);
+    }
+
+    .card-body {
+        height: var(--altobase2);
+    }
+    .card-body p
+    {    
+    font-size: calc(var(--cuerpo-size)*0.8);
+    }
+    .card-body img 
+    {
+        z-index: 0;
+        opacity: 0.9;
+        transition: none;
+    }
+    .card-body img:hover {
+        pointer-events: none;
+    }
+    .card-foot p
+    {
+    font-size: calc(var(--pie-size)*0.6);
+    }
 }

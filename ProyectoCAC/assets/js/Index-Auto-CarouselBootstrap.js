@@ -1,38 +1,33 @@
 /*Ingreso automatico del carousel*/
 /*ver en Index ====> section id="carousel" */
+/*carousel usado ==> carouselExampleInterval*/
 
 document.addEventListener('DOMContentLoaded', function () {
 
 /*Variable contenedora de todo el html*/
 var carousel_boots = 
 `
-<div class="carousel-container">
+<div class="carousel-container"> 
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
-            <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-1.png"
-                alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-            <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-2.png"
-                alt="...">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100 carousel-img" src="./assets/img/carousel/lib-carou-3.png"
-                alt="...">
-        </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="./assets/img/carousel/lib-carou-1.png" class="d-block " alt="...">
     </div>
-    <!--Botones-->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="./assets/img/carousel/lib-carou-2.png" class="d-block " alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/carousel/lib-carou-3.png" class="d-block " alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 </div>
 `
@@ -40,7 +35,9 @@ var carousel_boots =
 document.getElementById("carousel").innerHTML = carousel_boots;
 });
 
-/*El html ingresado - correspondiente al carousel de Bootstrap*/
+//El html ingresado tiene modificaciones - correspondiente al carousel de Bootstrap//
+//Es el html original de la libreria a continuacion//
+
 /*
 
             <div class="carousel-container">

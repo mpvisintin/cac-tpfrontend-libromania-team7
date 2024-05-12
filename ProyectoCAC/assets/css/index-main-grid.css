@@ -2,13 +2,22 @@
 .grid-index-container-main {
     margin: 5px;
     display: grid;
-    grid-template-columns:0.1 0.4 0.4 .4; /*4 columnas */ /*Se intento buscar proporcionalidad*/
-    grid-template-rows: 0.2fr 0.2fr 0.5fr 0.5fr 1fr; /*5 filas*/ /*En p*/
+    grid-template-columns:repeat(4,0.25fr); /*4 columnas */ /*Se intento buscar proporcionalidad*/
+    grid-template-rows: 0.2fr auto 0.25 0.25 1fr; /*5 filas*/ 
     gap: 2px;
 }
 
-/* Asignacion de areas de los ID */
+.grid-index-container-main 
+{
+    grid-template-areas:
+        "quienes-somos quienes-somos quienes-somos quienes-somos" 
+        "carousel carousel carousel carousel"
+        "catalogo1 catalogo2 catalogo2 catalogo2"
+        "catalogo1 catalogo2 catalogo2 catalogo2"
+        "favoritos favoritos favoritos favoritos"; 
+}
 
+/* Asignacion de areas de los ID */
 #quienes-somos 
 {
     background-color: red;
@@ -18,7 +27,7 @@
 #carousel 
 {
     background-color: green;
-    grid-area: carousel; 
+    grid-area: carousel;
 }
 
 #catalogo1
@@ -29,54 +38,51 @@
 
 #catalogo2 
 {
+    margin: 0;
+    padding:0;
+    
     background-color: yellow;
     grid-area: catalogo2; 
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
+    align-content: center;
     justify-content: space-evenly;
+    overflow: auto;
 }
 
-#favoritos {
+#favoritos 
+{
     background-color: blue;
     grid-area: favoritos;
 }
 
 /* Distribucion de areas */
-.grid-index-container-main {
-    grid-template-areas:
-        "quienes-somos quienes-somos quienes-somos quienes-somos" 
-        "carousel carousel carousel carousel"
-        "catalogo1 catalogo2 catalogo2 catalogo2"
-        "catalogo1 catalogo2 catalogo2 catalogo2"
-        "favoritos favoritos favoritos favoritos"; 
-}
-
 /*Tamaño movil 360x800*/
 
 @media screen and (max-width: 360px) 
 {
     .grid-index-container-main 
     {
-        grid-template-columns: 1fr; /*Todo en columnado*/
-        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.5fr;
-    }
-
-    #quienes-somos, /*Areas automaticas*/
-    #carousel,
-    #catalogo,
-    #favoritos 
-    {
-        grid-area: auto;
-    }
-
-    .grid-index-container-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto; 
+        /* Distribución de áreas modificada */
         grid-template-areas:
-            "quienes-somos"
-            "carousel"
-            "catalogo1"
-            "catalogo2"
-            "favoritos";
+            "quienes-somos quienes-somos"
+            "carousel carousel"
+            "catalogo1 catalogo1"
+            "catalogo2 catalogo2"
+            "favoritos favoritos";
+    }
+
+    #catalogo2 
+    {
+        height: 200px; /*Definimos el tamaño del contenendor*/
+        align-items: center;
+        justify-content: space-around;
+        align-content: flex-start;
+        overflow: auto;
+        padding: 0;
     }
 }

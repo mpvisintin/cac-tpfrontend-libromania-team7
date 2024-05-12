@@ -2,7 +2,7 @@
 
 .nav-bar
 {
-    position: sticky; /*El sticky no esta funcionando*/
+    position: sticky; 
     z-index: 100000; /*Se garantiza que este siempre arriba*/
     top: 0;
 

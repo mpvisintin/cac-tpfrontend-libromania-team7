@@ -3,6 +3,7 @@
 .banner /*Imagen banner*/
 { 
     height: 20vh;
+    width: 100%;
     background-image: url("../img/biblio.png");
     background-size: cover;
     background-position: center;
@@ -37,6 +38,6 @@
 {
     .banner
     {
-        height: 10vh;
+        height: 8vh;
     }
 }

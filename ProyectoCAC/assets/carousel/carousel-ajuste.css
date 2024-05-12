@@ -1,33 +1,60 @@
-.carousel-container /*Contenedor agregado*/
-{
+/* Mejora del carousel */
+
+:root {
+    
+    /*No estaria funcionando*/
+    
+    --carouselAncho: 1200px;
+    --carouselAlto: 600px;
+  }
+  
+  .carousel-container 
+  {
     display: flex;
-    justify-content: center;
     align-items: center;
-    object-fit: contain;
-    height: 350px;
+    justify-content: center;
     overflow: hidden;
-}
-
-.carousel-img /*Clase agregada*/
+    margin: 5px;
+  }
+  
+  .carousel-inner 
+  {
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+    overflow: hidden;
+  }
+  
+  .carousel-inner img 
+  {
+    width: var(--carouselAncho2);
+    height: var(--carouselAlto2);
+    object-fit: fill;
+  }
+  
+  .carousel-container button,
+  .carousel-container span 
+  {
+    width: var(--carouselAncho);
+    height: auto;
+  }
+  
+@media screen and (min-width: 360px) 
 {
-    width: 400px; /*Todas las imagenes tienen el mismo tamaño*/
-    height: 300px; 
-    width: 100%%;
-    object-fit: contain;
-    margin: 0px;
-    padding: 0px;
-}
-
-/*Tamaño movil 360x800*/
-
-@media screen and (max-width: 360px) 
-{
-    .carousel-container /*Contenedor agregado*/
+    :root 
     {
-        height: 200px;
+      --carouselAncho2: 1000px;
+      --carouselAlto2: 300px;
     }
-    .carousel-img /*Clase agregada*/
-    {
-        flex-wrap: nowrap;
+  
+    .carousel-inner img {
+      width: var(--carouselAncho2);
+      height: var(--carouselAlto2);
     }
-}
+  
+    .carousel-container button,
+    .carousel-container span {
+      width: var(--carouselAncho2);
+    }
+  }
+  
