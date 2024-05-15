@@ -20,3 +20,7 @@ main -> section -> contacto
 
 
 La idea es agregar la pagina error (en desarrollo) en las tarjetas del catalogo
+
+
+PAZ:
+* Busque las medidas estandar de pantallas (Pc escritorio, tableta y dispositivo movil), arme las media query en base a escritorio. Los botones de la nav bar quedan raris en tamaño movil pero se leen bien. Quizas deberiamos sacarle un botón para que quede más prolijo. 

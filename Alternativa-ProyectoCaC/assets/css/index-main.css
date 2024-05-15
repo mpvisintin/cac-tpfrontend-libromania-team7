@@ -33,7 +33,7 @@ main {
 
 /*--------------------------*/
 #contacto {
-    background-color: blue;
+    background-color: goldenrod;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -127,7 +127,7 @@ main {
     .text-content h2 {
         font-size: 32px; 
     }
-    .text-content p {
+    .text-content p { 
         font-size: 24px; 
     }
 } 
