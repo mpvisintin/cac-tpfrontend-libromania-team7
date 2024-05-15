@@ -34,10 +34,10 @@
 .bar ul {
     display: flex;
     justify-content: flex-end;
-    /* Alineación a la derecha */
+    /*Alineación a la derecha*/
     align-items: center;
     margin-right: 20px;
-    /* Ajustar el margen derecho */
+    /*Ajustar el margen derecho*/
 
     padding: 3px;
     /*Necesario para el efecto*/
@@ -111,7 +111,7 @@
 h2 {
     margin-top: 5px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     font-style: italic;
     font-size: 32px;
 }
@@ -160,8 +160,9 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: black;
 }
+
 
 /*----------------------------------*/
 /*Medias*/

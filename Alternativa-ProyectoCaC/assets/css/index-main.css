@@ -69,6 +69,32 @@ main {
     /* Fuente parrafo */
 }
 
+/*Botón Estamos aqui para tí (registro)*/
+.text-content {
+    text-align: center;
+}
+
+.text-content .btn-registro {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(40, 40, 40); 
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; 
+    transition: background-color 0.3s;
+}
+
+.text-content .btn-registro:hover {
+    background-color:black; 
+}
+
+.text-content .btn-registro:active {
+    background-color: black; 
+    transform: scale(0.98); 
+}
+
 /*----------------------------------*/
 /*Medias*/
 /*----------------------------------*/
