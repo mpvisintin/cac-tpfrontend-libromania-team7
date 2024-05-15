@@ -1,0 +1,13 @@
+/*Edicion del fondo de pagina*/
+
+.back-design
+{
+    background-color: rgb(224, 216, 176);
+}
+
+.back-design
+{
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    filter: brightness(0.9);
+}

@@ -1,0 +1,22 @@
+Esta todo maquetado el index 
+Se convirtio una landing page
+La tematica es la misma, se reciclo y se hizo alto guiso de codigo
+Ahora somos una imprenta**1 
+(**1 Capaz ahora si conviene agregar un mini texto por ahi aclarando que sosmos una imprenta o algo asi.)
+
+
+Falta añadir mediaquerys en todos los css
+    Tenemos para resolucion 320x480 y la resolucion natural (monitor)
+
+Ajustar la barra navegable para cuando se tiene resoluciones pequeñas
+
+Se añadira unas tres cards animadas de otra forma en la seccion:
+main -> section -> clientes (capaz si sobra tiempo probamos de nuevo carusel o lo inventamos nosotros)
+
+El acesso al registro - que se convertira en un formulario de contacto 
+se encuentra en:
+main -> section -> contacto 
+            A este punto le faltaria tunear el boton de contacto
+
+
+La idea es agregar la pagina error (en desarrollo) en las tarjetas del catalogo
