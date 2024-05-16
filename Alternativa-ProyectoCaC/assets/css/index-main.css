@@ -6,6 +6,7 @@ main {
 
 /*--------------------------*/
 #catalogo {
+    display: flex;
     flex-direction: column;
     border: 0 0 5px 0;
     border-style: inset;
@@ -27,7 +28,6 @@ main {
 
 /*--------------------------*/
 #clientes {
-    background-color: yellowgreen;
     margin-bottom: 20px;
 }
 

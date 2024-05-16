@@ -2,12 +2,6 @@
 
 .back-design
 {
-    background-color: rgb(224, 216, 176);
-}
-
-.back-design
-{
-    background-size: 200px 200px;
-    background-repeat: repeat;
+    background: linear-gradient(60deg,rgb(224, 216, 176),#333);
     filter: brightness(0.9);
 }

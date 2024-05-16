@@ -50,12 +50,6 @@
     list-style-type: none;
 }
 
-#cac1 div ul {
-    list-style-type: none;
-    /* Quita los puntos de la lista */
-    margin: 10px;
-}
-
 #cac1 img {
     margin: 5px 12px 12px 10px;
     width: 100%;
@@ -167,13 +161,20 @@ p {
             "cac3"
             "cac4";
     }
-    #cac1, #cac2, #cac3, #cac4 {
+
+    #cac1,
+    #cac2,
+    #cac3,
+    #cac4 {
         margin-top: 10px;
     }
+
     #cac1 div {
         flex-direction: column;
     }
-    #cac1 img, #cac3 img {
+
+    #cac1 img,
+    #cac3 img {
         width: 80%;
         height: auto;
     }
@@ -189,13 +190,20 @@ p {
             "cac3 cac3"
             "cac4 cac4";
     }
-    #cac1, #cac2, #cac3, #cac4 {
+
+    #cac1,
+    #cac2,
+    #cac3,
+    #cac4 {
         margin-top: 10px;
     }
+
     #cac1 div {
         flex-direction: column;
     }
-    #cac1 img, #cac3 img {
+
+    #cac1 img,
+    #cac3 img {
         width: 90%;
         height: auto;
     }

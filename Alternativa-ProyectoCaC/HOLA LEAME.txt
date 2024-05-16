@@ -25,3 +25,14 @@ La idea es agregar la pagina error (en desarrollo) en las tarjetas del catalogo
 PAZ:
 * Busque las medidas estandar de pantallas (Pc escritorio, tableta y dispositivo movil), arme las media query en base a escritorio. Los botones de la nav bar quedan raris en tamaño movil pero se leen bien. Quizas deberiamos sacarle un botón para que quede más prolijo. 
 *registro.html --> falta validación con javascript
+
+
+-------------- 16/5 -----------------------------
+
+G - Pipo
+	- Cambios menores a nivel general en varios css.
+	- Se eliminaron elementos redundantes en css`s que ya no son necesarios (cambio menor)
+	- Se realiza cajas para el formulario, ver en registro.css (cambio sutil)
+	- Se unifico la barra de Registro e Index en un solo archivo (cambio mayor)
+		-Los "medias" de la barra de navegacion hechos en "registro.css" siguen estando ahi, no se unifico los "medias de ambos archivos"
+	- Se elimina todo lo que no se usa mas en "background.css" - Solo es un fondo con gradiente (cambio menor)

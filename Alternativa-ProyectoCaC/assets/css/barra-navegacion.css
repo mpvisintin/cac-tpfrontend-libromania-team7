@@ -15,7 +15,7 @@
 }
 
 /*Aqui esta el tamaño de fuente*/
-.bar { 
+.bar {
     width: 100%;
     /*Ocupar todo el ancho*/
     height: 50px;
@@ -120,11 +120,13 @@
 @media screen and (max-width: 600px) {
     .bar {
         font-size: 10px;
-        height: 40px; 
+        height: 40px;
     }
+
     .bar-btn {
-        padding: 4px 8px; 
-        font-size: 10px; /*Acomoda el tamaño de fuente - más de 10px, se empieza a deformar la estructura*/
+        padding: 4px 8px;
+        font-size: 10px;
+        /*Acomoda el tamaño de fuente - más de 10px, se empieza a deformar la estructura*/
     }
 }
 
@@ -132,11 +134,12 @@
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .bar {
         font-size: 13px;
-        height: 45px; 
+        height: 45px;
     }
+
     .bar-btn {
-        padding: 5px 9px; 
-        font-size: 13px; 
+        padding: 5px 9px;
+        font-size: 13px;
     }
 }
 
@@ -144,10 +147,11 @@
 @media screen and (min-width: 1025px) {
     .bar {
         font-size: 14px;
-        height: 50px; 
+        height: 50px;
     }
+
     .bar-btn {
-        padding: 5px 10px; 
-        font-size: 14px; 
+        padding: 5px 10px;
+        font-size: 14px;
     }
 }
