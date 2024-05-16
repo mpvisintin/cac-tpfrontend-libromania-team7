@@ -27,13 +27,13 @@ main {
 
 /*--------------------------*/
 #clientes {
-    background-color: red;
+    background-color: yellowgreen;
     margin-bottom: 20px;
 }
 
 /*--------------------------*/
 #contacto {
-    background-color: goldenrod;
+    background-color: var(#ccc);
     height: auto;
     display: flex;
     flex-direction: row;
