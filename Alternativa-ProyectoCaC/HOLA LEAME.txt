@@ -36,3 +36,7 @@ G - Pipo
 	- Se unifico la barra de Registro e Index en un solo archivo (cambio mayor)
 		-Los "medias" de la barra de navegacion hechos en "registro.css" siguen estando ahi, no se unifico los "medias de ambos archivos"
 	- Se elimina todo lo que no se usa mas en "background.css" - Solo es un fondo con gradiente (cambio menor)
+
+  - Paz
+    - Realice js para la validación del formulario de registro.
+	
