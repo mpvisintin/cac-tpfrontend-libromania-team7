@@ -5,34 +5,28 @@ document.addEventListener('DOMContentLoaded', function () {
     const catalogoContainer = document.querySelector('#catalogo2');
     const libros = 
     [
-        { titulo: "La última tentación de Cristo", autor: "Nikos Kazantzakis", año: 1953, 
-        imagenurl: "./assets/img/catalogo/lib-cat-1.png", 
-        descripcion: "lacus laoreet non curabitur gravida arcu ac tortor dignissim" 
+        { titulo: "Al costado de la luna", autor: "Graciela Geller", año: 2006, 
+        imagenurl: "./assets/img/catalogo/lib-cat-1.jpeg",         
         },
 
-        { titulo: "Metro 2023", autor: "Dmitri Glujovski ", año: 2007, 
-        imagenurl: "./assets/img/catalogo/lib-cat-2.png", 
-        descripcion: "lacus laoreet non curabitur gravida arcu ac tortor dignissim" 
+        { titulo: "Opus Dos", autor: "Angélica Gorodischer", año: 1967, 
+        imagenurl: "./assets/img/catalogo/lib-cat-2.jpg",         
         },
 
         { titulo: "El Psicoanalista", autor: "John Katzenbach", año: 2002,  
-        imagenurl: "./assets/img/catalogo/lib-cat-3.png",
-        descripcion: "lacus laoreet non curabitur gravida arcu ac tortor dignissim" 
+        imagenurl: "./assets/img/catalogo/lib-cat-3.png",        
         },
 
-        { titulo: "The Coming", autor: "Vark Vikernes", año: 2018, 
-        imagenurl:"./assets/img/catalogo/lib-cat-4.png",
-        descripcion: "lacus laoreet non curabitur gravida arcu ac tortor dignissim"
+        { titulo: "Metro 2033", autor: "Dmitry Gluhovsky", año: 2002, 
+        imagenurl:"./assets/img/catalogo/lib-cat-4.png",        
         },
 
         { titulo: "Yo Matias", autor: "Sendra", año: 2006, 
-        imagenurl: "./assets/img/catalogo/lib-cat-5.png", 
-        descripcion: "lacus laoreet non curabitur gravida arcu ac tortor dignissim" 
+        imagenurl: "./assets/img/catalogo/lib-cat-5.png",          
         },
 
         { titulo: "La alegria de cocinar", autor: "El Arguiñano", año: 1954, 
-        imagenurl: "./assets/img/catalogo/lib-cat-6.png",
-        descripcion: "lacus laoreet non curabitur gravida arcu ac tortor dignissim"
+        imagenurl: "./assets/img/catalogo/lib-cat-6.png",        
         },
         ,
     ];
@@ -46,8 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
             
             <div class="card-body">
-                <img src="${libro.imagenurl}">
-                <p class="card-text">"${libro.descripcion}"</p>
+                <img src="${libro.imagenurl}">               
             </div>
             
             <div class="card-foot"> 

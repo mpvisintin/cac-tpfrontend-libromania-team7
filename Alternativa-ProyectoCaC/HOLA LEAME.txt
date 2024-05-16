@@ -39,4 +39,5 @@ G - Pipo
 
   - Paz
     - Realice js para la validación del formulario de registro.
-	
+	- Se borró pagina "formulario" y su js. Ya que no necesitaremos la solicitud de libros. 
+	- Se inserto un carrousel de boostrap con tres autores random, cada uno tiene titulo y descripcion. Es responsive y el tamaño viene por defecto por lo que se deja así. 
