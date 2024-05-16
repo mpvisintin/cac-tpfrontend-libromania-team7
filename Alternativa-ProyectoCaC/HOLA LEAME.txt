@@ -41,3 +41,20 @@ G - Pipo
     - Realice js para la validación del formulario de registro.
 	- Se borró pagina "formulario" y su js. Ya que no necesitaremos la solicitud de libros. 
 	- Se inserto un carrousel de boostrap con tres autores random, cada uno tiene titulo y descripcion. Es responsive y el tamaño viene por defecto por lo que se deja así. 
+
+G - 
+
+	- Se hizo local el repositorio bootstrap (css+js) (Cambio sutil)
+	- Se inserta por .js el carousel (Cambio importante)
+	- Se reparo la barra de navegacion (Cambio sutil) 
+	- Se redimensionaron las imagenes (Cambio sutil)
+	- Se elimina de las card los estilos de parrafo por no ser necesario (Cambio importante)
+
+	- Importante, se paso por validador el nuevo INDEX y esta ok. [web https://validator.w3.org/]
+			- Siempre indica un detalle con los script pero ni idea porque (todo funciona)
+
+	- Importante, el registro tiene un error que se considera grave por lo demas todo ok.
+			- Error grave en input linea 99, exactamente: <input type="submit" value="REGISTRARSE" href="/index.html">
+			- Igual que index, indica problemas con script .js.
+
+	- El contenido del footer pasan a ser div por recomendacion del validador, se conservan las "id" (Cambio importante)
