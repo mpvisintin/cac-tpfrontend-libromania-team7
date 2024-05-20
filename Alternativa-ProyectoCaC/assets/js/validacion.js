@@ -1,3 +1,5 @@
+//Validación del formulario de registro
+
 function validarFormulario(event) {
     event.preventDefault();
     var nombre = document.getElementById('nombreUsuario').value;
@@ -12,7 +14,7 @@ function validarFormulario(event) {
         alert('Por favor, complete todos los campos y acepte los términos y condiciones.');
     } else {
         alert('Formulario enviado correctamente.');
-        window.location.href = '../index.html'; // Redirige a la página de inicio
+        window.location.href = '../pages/bienvenida.html'; //Nos dirige a la pagina de bienvenida, en desarrollo
     }
 }
 
