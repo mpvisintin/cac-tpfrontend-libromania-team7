@@ -15,6 +15,7 @@ una utilidad, es solo para testear las clases.
 de libros, y otro archivo que cree automaticamente la libreria (Supongamos que montamos la libreria y la base no existe, 
 es mas que obvio que partiremos de una base existente, esto para sumar y hacernos los estupendos)
 
+30/06 NOTA Al final Github no cargo el entorno virtual
 
 
 
