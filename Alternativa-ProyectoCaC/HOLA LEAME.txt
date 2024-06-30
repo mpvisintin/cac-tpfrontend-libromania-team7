@@ -1,3 +1,39 @@
+Bienvenido al "HOLA LEAME" del CaC Back (Es Back pero no volvimos, bueno si, pero es back de Back-End)
+Links utiles (estupido y sensual Git)
+https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf
+https://gist.github.com/dasdo/9ff71c5c0efa037441b6
+
+30/06 Pipo:
+- Se crea carpeta App, internamente tiene una carpeta "env" es un entorno virtual de Python con los pip/librerias de
+Flask y MySQL (el conector). Con el fin de no instalar en todo el sistema dichas librerias.
+- Dejo link para activar el entorno, mini tutorial de amigos de Iutu accesible https://www.youtube.com/watch?v=FA6d9f_bs_Q
+- Se creo un archivo que contiene la clase "Biblioteca" == BibliotecaClass.py y otro llamado "test.py". Este ultimo no tiene
+una utilidad, es solo para testear las clases.
+- BibliotecaClass.py , debe ser adaptado a MySQL. (Basicamente, reescribir segun comandos de la libreria especifica)
+
+- Pensamiento, se puede separar en dos la parte MySQL, se pueder realizar por un lado la clase correspondiente para cargado
+de libros, y otro archivo que cree automaticamente la libreria (Supongamos que montamos la libreria y la base no existe, 
+es mas que obvio que partiremos de una base existente, esto para sumar y hacernos los estupendos)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------
 Esta todo maquetado el index 
 Se convirtio una landing page
 La tematica es la misma, se reciclo y se hizo alto guiso de codigo
