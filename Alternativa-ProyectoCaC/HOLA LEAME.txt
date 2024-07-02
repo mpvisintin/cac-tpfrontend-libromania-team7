@@ -14,6 +14,7 @@ el tercero "BibliotecaFlask".
 - De "C" es el archivo destinado a Flask. Apuntar a la modularidad para no estar modificando "BibliotecaClassSQL"
 constantemente. Si no se puede, bueno, escribiremos un archivo extenso y fin.
 
+
 -------------------------------------------------------------------------------------------------------------------------
 
 30/06 Pipo:
