@@ -1,6 +1,8 @@
 """
-Creacion de la clase "Libros" para crear
-los objetos "libro", para almacenar 
+Este archivo es una base para crear el SQL, usarlo de referencia
+
+Creacion de la clase "Biblioteca" para crear
+los objetos "libro", para almacenar en el vector "Libros = []"
 y luego aplicar en la API web
 
 Tiene varios parametros queda a conveniencia para agregar/quitar: 

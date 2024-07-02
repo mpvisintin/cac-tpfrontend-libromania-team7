@@ -3,6 +3,19 @@ Links utiles (estupido y sensual Git)
 https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf
 https://gist.github.com/dasdo/9ff71c5c0efa037441b6
 
+01/07 Pipo
+- Se crean tres archivos nuevos todos tipo ".py". El primero "BibliotecaClassSQL", segundo "BibliotecaDBSQLcreator" y
+el tercero "BibliotecaFlask".
+ A- El primer archivo contiene la clase -Biblioteca- construida con la libreria de Mysql. Sigue en desarrollo.
+ B- El segundo archivo tiene el creador de la DB, en caso de no existir, "db_libromania", nombre de la tabla "libros"
+ C- Se comienza en Flask. -Practicamente nada tiene-
+
+- De "A" se debe tuniar y mejorar. No tiene expeciones, solo funcionalides.
+- De "C" es el archivo destinado a Flask. Apuntar a la modularidad para no estar modificando "BibliotecaClassSQL"
+constantemente. Si no se puede, bueno, escribiremos un archivo extenso y fin.
+
+-------------------------------------------------------------------------------------------------------------------------
+
 30/06 Pipo:
 - Se crea carpeta App, internamente tiene una carpeta "env" es un entorno virtual de Python con los pip/librerias de
 Flask y MySQL (el conector). Con el fin de no instalar en todo el sistema dichas librerias.
